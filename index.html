@@ -10,6 +10,25 @@
     <title>Home</title>
 </head>
 <body>
+    <script>
+        var slideIndex = 1;
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+        showDivs(slideIndex);
+</script>
     <!--Nav bar-->
     <div class="nav-container">
         <!--Nav section-->
@@ -33,22 +52,39 @@
 
     <!--Main content-->
     <div class="main-content">
-        <!--Toggleable side bar-->
-
         <!--Main view-->
         <div class="home-section">
             <h1>Welcome to Streaming App</h1>
             <!--Carousel section of streamers-->
+            <div class="carousel-container">
+                <button onclick="plusDivs(-1)">&#10094;</button>
+
+                <img class="mySlides" src="images/carousel1.jpg">
+                <img class="mySlides" src="images/carousel2.jpg">
+                <img class="mySlides" src="images/carousel3.jpg">
+                
+                <button onclick="plusDivs(1)">&#10095;</button>
+            </div>            
 
             <!--Section with a bunch of recommended streamers-->
             <main>
                 <p>Recommended channels</p>
 
                 <!--Grid view of streamers-->
+                <div class="recommended">
+                    <img src="images/carousel1.jpg" alt="Recommended streamer #1">
+                    <img src="images/carousel2.jpg" alt="Recommended streamer #2">
+                    <img src="images/carousel3.jpg" alt="Recommended streamer #3">
+                </div>
 
                 <p>Recommended stream categories</p>
 
                 <!--Side by side view of categories-->
+                <div class="recommended">
+                    <img src="images/categorie1.jpg" alt="Recommended streamer #1">
+                    <img src="images/categorie2.jpg" alt="Recommended streamer #2">
+                    <img src="images/categorie3.jpg" alt="Recommended streamer #3">
+                </div>
             </main>
         </div>
     </div>
