@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Top bar styling*/
+
+.nav-container {
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: inline-flex;
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.search {
+    margin: auto;
+}
+
+.search input {
+    width: 400px;
+    height: 30px;
+}
+
+.search button {
+    height: 30px;
+    width: 30px;
+}
+
+.profile {
+    text-decoration: none;
+    color: white;
+}
+
+/*Main content styling*/
