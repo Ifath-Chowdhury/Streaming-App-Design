@@ -90,7 +90,21 @@
     justify-content: center;
 }
 
+.recommended a {
+    margin: 15px;
+    width: 100%;
+}
+
 .recommended img {
     width: 25%;
     margin: 15px;
+}
+
+/*Channel stream*/
+.stream-and-chat {
+    display: inline-flex;
+}
+
+.stream-and-chat img {
+    width: 75%;
 }
