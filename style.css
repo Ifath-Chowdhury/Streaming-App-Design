@@ -130,3 +130,30 @@
 
 /*Profile view*/
 
+.two-column-profile-view {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom:50px;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.left-column {
+    flex-basis: 48%;
+}
+
+.left-col img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-col {
+    flex-basis: 48%;
+}
+
+.right-col h3, p {
+    font-size: 3rem;
+}
