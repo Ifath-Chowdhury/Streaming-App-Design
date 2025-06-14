@@ -101,10 +101,32 @@
 }
 
 /*Channel stream*/
+
 .stream-and-chat {
     display: inline-flex;
+    margin: 15px;
+    align-content: center;
+    justify-content: center;
 }
 
 .stream-and-chat img {
-    width: 75%;
+    width: 85%;
 }
+
+.chat {
+    background-color: gray;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 500px;
+}
+
+.stream-title {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/*Profile view*/
+
