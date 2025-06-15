@@ -76,6 +76,7 @@
 }
 
 .mySlides {
+    width: 100%;
     display: none;
 }
 
@@ -119,6 +120,12 @@
     padding: 10px;
     font-size: 1.5rem;
     width: 500px;
+    color: white;
+    border: 5px solid black;
+}
+
+.chat ul {
+    list-style: none;
 }
 
 .stream-title {
@@ -156,4 +163,33 @@
 
 .right-col h3, p {
     font-size: 3rem;
+}
+
+/*Responsive styling*/
+
+@media screen and (max-width: 800px) {
+    .nav-container {
+        font-size: 1.25rem;
+    }
+
+    .search input {
+        width: 100px;
+    }
+
+    .two-column-profile-view, .stream-and-chat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stream-and-chat img {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .chat {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
